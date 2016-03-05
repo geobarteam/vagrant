@@ -1,0 +1,5 @@
+Active Version              Runtime Architecture OperatingSystem Alias
+------ -------              ------- ------------ --------------- -----
+       1.0.0-rc1-update1    coreclr x64          linux           
+  *    1.0.0-rc1-update1    mono                 linux/osx       default
+
