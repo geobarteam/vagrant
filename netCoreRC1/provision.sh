@@ -1,8 +1,9 @@
 
+sudo apt-get update
 sudo apt-get -y install git 
-sudo apt-get -y install --no-install-recommends ubuntu-desktop 
+sudo apt-get -y install ubuntu-desktop 
 sudo apt-get -y install virtualbox-guest-utils virtualbox-guest-x11  virtualbox-guest-dkms 
-
+sudo apt-get -y install nodejs npm
  
 sudo apt-get -y install build-essential openssl libssl-dev curl 
 sudo npm install -g -yo
