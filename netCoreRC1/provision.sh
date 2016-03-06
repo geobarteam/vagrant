@@ -1,10 +1,10 @@
 
-sudo apt-get install git 
-sudo apt-get install --no-install-recommends ubuntu-desktop --assume-yes
-sudo apt-get install virtualbox-guest-utils virtualbox-guest-x11  virtualbox-guest-dkms --assume-yes
+sudo apt-get -y install git 
+sudo apt-get -y install --no-install-recommends ubuntu-desktop 
+sudo apt-get -y install virtualbox-guest-utils virtualbox-guest-x11  virtualbox-guest-dkms 
 
  
-sudo apt-get install build-essential openssl libssl-dev curl 
+sudo apt-get -y install build-essential openssl libssl-dev curl 
 sudo npm install -g -yo
 sudo npm install -g generator-aspnet
 sudo mozroots --import --sync
@@ -14,18 +14,18 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328
 echo "deb http://download.mono-project.com/repo/debian wheezy main" | sudo tee /etc/apt/sources.list.d/mono-xamarin.list
 
 #Install apps
-sudo apt-get install chromium-browser --assume-yes
+sudo apt-get -y install chromium-browser
 
 #Install mono 
-sudo apt-get install mono-devel --assume-yes
-sudo apt-get install mono-complete --assume-yes
+sudo apt-get -y install mono-devel 
+sudo apt-get -y install mono-complete 
 
 
 #Install .netcore & mono
-sudo apt-get install unzip curl --assume-yes
+sudo apt-get -y install unzip curl 
 curl -sSL https://raw.githubusercontent.com/aspnet/Home/dev/dnvminstall.sh | DNX_BRANCH=dev sh && source ~/.dnx/dnvm/dnvm.sh
 
-sudo apt-get install libunwind8 gettext libssl-dev libcurl4-openssl-dev zlib1g libicu-dev uuid-dev --assume-yes
+sudo apt-get -y install libunwind8 gettext libssl-dev libcurl4-openssl-dev zlib1g libicu-dev uuid-dev 
 
 dnvm upgrade -r coreclr
 dnvm upgrade -r mono
