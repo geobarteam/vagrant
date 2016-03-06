@@ -24,6 +24,7 @@ sudo apt-get install mono-complete --assume-yes
 #Install .netcore & mono
 sudo apt-get install unzip curl --assume-yes
 curl -sSL https://raw.githubusercontent.com/aspnet/Home/dev/dnvminstall.sh | DNX_BRANCH=dev sh && source ~/.dnx/dnvm/dnvm.sh
+
 sudo apt-get install libunwind8 gettext libssl-dev libcurl4-openssl-dev zlib1g libicu-dev uuid-dev --assume-yes
 dnvm upgrade -r coreclr
 dnvm upgrade -r mono
